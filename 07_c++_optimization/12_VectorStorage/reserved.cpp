@@ -11,9 +11,9 @@ vector< vector<int> > reserved(int rows, int cols, int initial_value) {
     matrix.reserve(rows);
 
     //one of option is to add below code
-    //for(vector < vector<int> >::iterator it=matrix.begin(); it!=matrix.end(); ++it) {
-    //    it->reserve(cols);
-    //}
+    for(vector < vector<int> >::iterator it=matrix.begin(); it!=matrix.end(); ++it) {
+        it->reserve(cols);
+    }
 
 
     for (int i = 0; i < rows; i++) {
